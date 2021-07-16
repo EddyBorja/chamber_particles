@@ -1,4 +1,3 @@
-This is Eddy Borja's coding exercise solution as requested by Vestwell. It has been written as a node module in Javascript.
 
 ### Getting Started
 
