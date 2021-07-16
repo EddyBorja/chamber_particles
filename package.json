@@ -1,0 +1,16 @@
+{
+  "name": "particle_chamber",
+  "version": "1.0.0",
+  "description": "Coding exercise for Vestwell",
+  "main": "index.js",
+  "author": "Eddy Borja",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "jest": "^27.0.6"
+  },
+  "scripts": {
+      "test" : "jest"
+  }
+
+}
