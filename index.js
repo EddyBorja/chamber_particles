@@ -13,7 +13,9 @@ class Chamber {
     }
 
     animate(speed) {
-        if(speed > 10) {
+        if(typeof speed !== 'number') {
+            throw new Error("Animate speed must be an integer between 1 - 10");
+        } else if(speed > 10) {
             throw new Error("Animate speed must be less than or equal to 10");
         } else if(speed < 1) {
             throw new Error("Animate speed must be positive non-zero integer");

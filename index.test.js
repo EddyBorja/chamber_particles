@@ -102,6 +102,7 @@ describe("Chamber unit tests", () => {
 });
 
 describe("Edge Cases", () => {
+
     test('Chamber string with invalid characters fails', () => {
         const badString = '.H.R..L...';
         expect(() => {
@@ -139,6 +140,12 @@ describe("Edge Cases", () => {
         expect(() => {
             new Chamber(".R....").animate(-1);
         }).toThrowError("Animate speed must be positive non-zero integer");
+    });
+
+    test('Non-integer animate speed fails', () => {
+        expect(() => {
+            new Chamber('.R....').animate('A');
+        }).toThrowError("Animate speed must be an integer between 1 - 10");
     });
 });
 
